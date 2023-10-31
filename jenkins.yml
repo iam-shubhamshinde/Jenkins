@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  jenkins:
+    image: $image_tag
+    container_name: jenkins_setup
+    ports:
+      - '8081:8080'
+      - '443:8443'
+    environment:
+      - JENKINS_USERNAME=$jenkins_username
+      - JENKINS_PASSWORD=$jenkins_password
+    env_file:
+      - ./.env
+    volumes:
+      - 'jenkins_setup:/bitnami'
+volumes:
+  jenkins_setup:
+    #    driver: local # Define the driver and options under the volume name
+    #    driver_opts:
+    #      type: none
+    #      device: ./jenkins_setup1
+    #      o: bind
