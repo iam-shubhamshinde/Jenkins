@@ -1,4 +1,4 @@
-## Jenkins setup Dockerfile
+## Jenkins setup Dockerfile updated
 FROM jenkins-setup:latest
 ENV JENKINS_USERNAME=Admin
 ENV JENKINS_PASSWORD=Password
