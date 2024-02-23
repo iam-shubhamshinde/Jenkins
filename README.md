@@ -1,2 +1,2 @@
 # JenkinsTest
-This is used for jenkins testing!
+This is used to set up Jenkins utilizing docker containers!
